@@ -1,16 +1,32 @@
-# React + Vite
+📝 Code Editor (React + Vite + Tailwind + CodeMirror 6)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web-based code editor built with React, CodeMirror 6, TailwindCSS, and Vite.
+It allows you to write HTML, CSS, and JavaScript in separate editor panels and preview the live output in real-time inside an iframe (with a 500ms debounce to avoid excessive refresh).
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✍️ Three editors: HTML, CSS, and JavaScript.
 
-## React Compiler
+🎨 CodeMirror 6 with syntax highlighting, line numbers, and Material theme.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚡ Debounced live preview (updates after 500ms of inactivity).
 
-## Expanding the ESLint configuration
+🔀 Collapsible panels for each editor.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🖤 Dark UI powered by TailwindCSS.
+
+📂 Project Structure
+src/
+ ├── App.jsx         # Main app with 3 editors + output iframe
+ ├── Editer.jsx      # (Editor component - collapsible CodeMirror panel)
+ └── index.css       # TailwindCSS styles
+
+🛠️ Tech Stack
+
+React 18+ (with hooks)
+
+Vite (fast dev environment)
+
+TailwindCSS (for styling)
+
+CodeMirror 6 (@uiw/react-codemirror)
